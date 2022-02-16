@@ -31,6 +31,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -350,7 +352,8 @@ a {
   justify-content: center;
   align-items: center;
   border: 2px solid #212121;
-  border-radius: 2px;
+  border-radius: 4px;
+  fill: #fff;
 }
 
 .checkbox-text {
@@ -394,6 +397,7 @@ a {
   min-width: 528px;
   min-height: 500px;
   background-color: #fff;
+
   z-index: 3;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -502,7 +506,6 @@ a {
 }
 
 /*------Pictures section------*/
-
 .pictures-section {
   text-align: center;
   padding-bottom: 94px;
@@ -519,15 +522,17 @@ a {
 
 .pictures-list {
   display: flex;
+  margin-top: 50px;
   margin-left: -30px;
-  flex-wrap: wrap;
   position: relative;
 }
+
 .pictures-list-item {
-  width: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   position: relative;
 }
+
 .pictures-item-text {
   font-weight: 700;
   font-size: 14px;
